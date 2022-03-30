@@ -1,0 +1,159 @@
+{
+  "id": "f2b5cc0a-ffdc-4082-b13b-1e26f64791e7",
+  "version": "2.0",
+  "name": "Heartland",
+  "url": "http://automationpractice.com",
+  "tests": [{
+    "id": "af78e937-06ee-4aa0-843e-0c055a240af4",
+    "name": "Heartland Test",
+    "commands": [{
+      "id": "c257f365-5068-493c-97b3-1a73b460c2d4",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9ad88be-17ec-404a-a0e7-1fe83446c350",
+      "comment": "",
+      "command": "click",
+      "target": "id=search_query_top",
+      "targets": [
+        ["id=search_query_top", "id"],
+        ["name=search_query", "name"],
+        ["css=#search_query_top", "css:finder"],
+        ["xpath=//input[@id='search_query_top']", "xpath:attributes"],
+        ["xpath=//form[@id='searchbox']/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e89333c0-7184-4f01-9822-40353b3b943b",
+      "comment": "",
+      "command": "type",
+      "target": "id=search_query_top",
+      "targets": [
+        ["id=search_query_top", "id"],
+        ["name=search_query", "name"],
+        ["css=#search_query_top", "css:finder"],
+        ["xpath=//input[@id='search_query_top']", "xpath:attributes"],
+        ["xpath=//form[@id='searchbox']/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "Dress"
+    }, {
+      "id": "40d03a91-5f2d-4e3b-84e8-78a2eb2f20f3",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit_search",
+      "targets": [
+        ["name=submit_search", "name"],
+        ["css=.button-search", "css:finder"],
+        ["xpath=//button[@name='submit_search']", "xpath:attributes"],
+        ["xpath=//form[@id='searchbox']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9ef2c73-751c-43cd-bfa1-6f761ad10c3c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.clearfix:nth-child(1) > .content_img > .replace-2x",
+      "targets": [
+        ["css=.clearfix:nth-child(1) > .content_img > .replace-2x", "css:finder"],
+        ["xpath=//img[contains(@src,'http://automationpractice.com/img/p/2/0/20-small_default.jpg')]", "xpath:img"],
+        ["xpath=//div[@id='best-sellers_block_right']/div/ul/li/a/img", "xpath:idRelative"],
+        ["xpath=//li/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6857c7d4-00db-4042-b074-bc9b20a8136d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button-plus > span",
+      "targets": [
+        ["css=.button-plus > span", "css:finder"],
+        ["xpath=//p[@id='quantity_wanted_p']/a[2]/span", "xpath:idRelative"],
+        ["xpath=//a[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a8cf656-273b-4f35-ba25-35815deee828",
+      "comment": "",
+      "command": "click",
+      "target": "id=group_1",
+      "targets": [
+        ["id=group_1", "id"],
+        ["name=group_1", "name"],
+        ["css=#group_1", "css:finder"],
+        ["xpath=//select[@id='group_1']", "xpath:attributes"],
+        ["xpath=//div[@id='uniform-group_1']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18adc7cb-85f4-4b61-a6fa-8dc64316cf0b",
+      "comment": "",
+      "command": "select",
+      "target": "id=group_1",
+      "targets": [],
+      "value": "label=M"
+    }, {
+      "id": "7df5920e-a7ac-4e79-8f9b-d9aad8664143",
+      "comment": "",
+      "command": "click",
+      "target": "id=color_15",
+      "targets": [
+        ["id=color_15", "id"],
+        ["name=Green", "name"],
+        ["css=#color_15", "css:finder"],
+        ["xpath=//a[@id='color_15']", "xpath:attributes"],
+        ["xpath=//ul[@id='color_to_pick_list']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://automationpractice.com/index.php?id_product=7&controller=product'])[2]", "xpath:href"],
+        ["xpath=//fieldset[2]/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0b575a8-6bce-4436-aebd-87c675e6de6f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.exclusive > span",
+      "targets": [
+        ["css=.exclusive > span", "css:finder"],
+        ["xpath=//p[@id='add_to_cart']/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/p/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3933ae38-ceaa-4604-bc08-ceebae3307cf",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=h2:nth-child(2)",
+      "targets": [
+        ["css=h2:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='layer_cart']/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Product successfully added to your shopping cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba3e66a5-491b-46d8-af14-0dd5204ece2f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h2:nth-child(2)",
+      "targets": [],
+      "value": "Product successfully added to your shopping cart"
+    }]
+  }],
+  "suites": [{
+    "id": "a6ec6677-4f66-4ef6-b8a6-475582625efd",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["af78e937-06ee-4aa0-843e-0c055a240af4"]
+  }],
+  "urls": ["http://automationpractice.com/"],
+  "plugins": []
+}
